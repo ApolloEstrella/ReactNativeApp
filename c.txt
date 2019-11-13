@@ -1,0 +1,251 @@
+Pixel_3a_API_29
+
+
+Pixel_3a_XL_API_29
+Pixel_XL_API_29 
+adb reverse tcp:35118 tcp:35118 // inorder to run localhost in react native application.
+https://pokeapi.co   // online sample api
+Nexus_S_API_28
+Pixel_2_API_29
+Pixel_3a_XL_API_29
+emulator -list-avds
+emulator -avd Pixel_3a_XL_API_29 -no-snapshot-save
+npm install @types/redux-form
+C:\Users\stars\.android\avd
+
+react-native init AwesomeProject
+cd AwesomeProject
+react-native run-android
+
+react-native init AwesomeProject --version X.XX.X
+react-native init AwesomeProject --version react-native@next
+
+import { reduxForm, Field } from 'redux-form';
+
+10-07 08:51:56.571 26853 26890 E ReactNativeJS:  1. Clear watchman watches: watchman watch-del-all
+10-07 08:51:56.571 26853 26890 E ReactNativeJS:  2. Delete node_modules: rm -rf node_modules and run yarn install
+10-07 08:51:56.571 26853 26890 E ReactNativeJS:  3. Reset Metro's cache: yarn start --reset-cache
+10-07 08:51:56.571 26853 26890 E ReactNativeJS:  4. Remove the cache: rm -rf /tmp/metro-*
+
+npm install --save redux
+
+import React, { Component } from "react";
+import { View, TextInput  } from "react-native";
+
+
+export default class GradeComputation extends Component {
+  render() {
+    return (
+      <View>
+        <TextInput style={{color:'blue'}} placeholder="First Name123"></TextInput>
+        <TextInput style={{color:'blue'}} placeholder="Last Name456"></TextInput>
+      </View>
+    );
+  }
+}
+
+		29.2.1	Installed
+
+
+
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Android Studio
+C:\Users\stars\AppData\Local\Android\Sdk\emulator\emulator.exe
+7
+C:\Users\stars\AppData\Local\Android\Sdk\emulator\emulator.exe
+
+Resetting for cold boot: emulation engine failed.
+com.android.tools.idea.avdmanager.AvdDisplayList$HighlightableIconPair@79339837	Pixel 3a XL API 29	com.android.tools.idea.avdmanager.AvdDisplayList$HighlightableIconPair@7e619f76	1080 × 2160: 400dpi	29	Android 10.0 (Google APIs)	x86_64	3.4 GB	com.android.sdklib.internal.avd.AvdInfo@49a5453d
+
+
+
+import React from "react";
+import { StyleSheet, Text, View, TextInput, Button, Alert } from "react-native";
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text>First Name</Text>
+      <TextInput style={styles.Input}></TextInput>
+      <Text>Last Name</Text>
+      <TextInput style={styles.Input}></TextInput>
+      <Button title="Submit" onPress={() => Alert.alert("Hi")}></Button>
+    </View>
+  );
+} 
+
+const styles = StyleSheet.create({
+  container: {
+    //flex: 1,
+    backgroundColor: "#fff" 
+  },
+  Input: {
+    borderStyle: "solid",
+    borderColor: "black",
+    borderWidth: 1,
+    borderRadius: 5,
+    width: 200,
+    padding: '25px 25px 25px 25px'
+    
+  }
+});
+
+
+It's really simple.
+
+Add jetifier to your package.json dev-dependencies:
+
+npm install jetifier --save-dev
+
+Then add this to your scripts section in your package.json file:
+
+"postinstall": "jetify"
+
+So your package.json should look something like this:
+
+{
+	"name": "app",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"postinstall": "jetify"
+	},
+	"dependencies": {
+		"react-native": "0.60.5",
+		"react-native-unimodules": "^0.7.0-rc.1"
+	},
+	"devDependencies": {
+		"jetifier": "^1.6.4",
+	}
+}
+Then run npx jetify in the same folder as your package.json.
+
+Now you can properly compile your android app. The next time you run npm install the jetify command will be run automatically.
+
+import * as Yup from 'yup';
+
+validationSchema: Yup.object({
+  password: Yup.string().required('Password is required'),
+  passwordConfirmation: Yup.string()
+     .oneOf([Yup.ref('password'), null], 'Passwords must match')
+});
+
+<TextInput
+              value={values.email}
+              onChangeText={handleChange("email")}
+              onBlur={() => setFieldTouched("email")}
+              placeholder="E-mail"
+            />
+            {touched.email && errors.email && (
+              <Text style={{ fontSize: 10, color: "red" }}>{errors.email}</Text>
+            )}
+            <TextInput
+              value={values.password}
+              onChangeText={handleChange("password")}
+              placeholder="Password"
+              onBlur={() => setFieldTouched("password")}
+              secureTextEntry={true}
+            />
+            {touched.password && errors.password && (
+              <Text style={{ fontSize: 10, color: "red" }}>
+                {errors.password}
+              </Text>
+            )}
+            <TextInput
+              value={values.confirmPassword}
+              onChangeText={handleChange("confirmPassword")}
+              placeholder="Confirm password"
+              onBlur={() => setFieldTouched("confirmPassword")}
+              secureTextEntry={true}
+            />
+            {touched.confirmPassword && errors.confirmPassword && (
+              <Text style={{ fontSize: 10, color: "red" }}>
+                {errors.confirmPassword}
+              </Text>
+            )}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<TextInput
+              value={values.email}
+              onChangeText={handleChange("email")}
+              onBlur={() => setFieldTouched("email")}
+              placeholder="E-mail"
+            />
+
+            <TextInput
+              value={values.password}
+              onChangeText={handleChange("password")}
+              placeholder="Password"
+              onBlur={() => setFieldTouched("password")}
+              secureTextEntry={true}
+            />
+
+            <TextInput
+              value={values.confirmPassword}
+              onChangeText={handleChange("confirmPassword")}
+              placeholder="Confirm password"
+              onBlur={() => setFieldTouched("confirmPassword")}
+              secureTextEntry={true}
+            />
+
+
+
+For me my issue was putting the wrong entry-file when bundling.
+
+I was using App.js as my entry-file, hence the App couldn't find AppRegistry
+
+Correct:
+
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
+
+
+
+import React, { Component } from 'react';
+import { Platform, StyleSheet, Text, View } from 'react-native';
+
+const instructions = Platform.select({
+  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
+  android: 'Double tap R on your keyboard to reload,\n' + 'Shake or press menu button for dev menu',
+});
+
+export default class App extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <Text style={styles.instructions}>To get started, edit App.js</Text>
+        <Text style={styles.instructions}>{instructions}</Text>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
+});
