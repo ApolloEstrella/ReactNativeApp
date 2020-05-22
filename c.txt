@@ -1,5 +1,23 @@
+load the project
+react-native start
+create launch.json
+{
+    "configurations": [
+    {
+        "name": "Attach to packager",
+        "cwd": "${workspaceFolder}",
+        "type": "reactnative",
+        "request": "attach"
+    }
+    ]
+}
+
+click on breakpoints
+
+
 Pixel_3a_API_29
 
+npm run android (to run on virtual device)
 
 Pixel_3a_XL_API_29
 Pixel_XL_API_29 
@@ -249,3 +267,4 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+If running on a device, run adb reverse tcp:8081 tcp:8081

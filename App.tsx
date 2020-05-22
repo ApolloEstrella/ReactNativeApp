@@ -1,3 +1,24 @@
+/*
+ import * as React from 'react';
+ import { Checkbox } from 'react-native-paper';
+ 
+ export default class MyComponent extends React.Component {
+   state = {
+     checked: false,
+   };
+ 
+   render() {
+     const { checked } = this.state;
+     return (
+       <Checkbox
+         status={checked ? 'checked' : 'unchecked'}
+         onPress={() => { this.setState({ checked: !checked }); }}
+       />
+     );
+   }
+ }
+*/
+
 import * as yup from "yup";
 import { Formik } from "formik";
 
@@ -39,7 +60,7 @@ export default class App extends Component {
             .required()
         })}
       >
-        {({
+        {({  
           values,
           handleChange,
           errors,
@@ -71,7 +92,7 @@ export default class App extends Component {
               </Text>
             )}
             <Button
-              title="Sign In!!!"
+              title="Sign In"
               disabled={!isValid}
               onPress={handleSubmit}
             />
